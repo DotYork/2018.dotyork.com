@@ -9,6 +9,9 @@ import {
 // components
 import SpeakerHandler from './SpeakerHandler';
 
+// css
+import './speaker.css';
+
 const Speaker = (props) => {
   return (
     <li className="p-speaker">

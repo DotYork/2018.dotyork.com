@@ -1,0 +1,27 @@
+.p-session__header {
+  background: white;
+  border-radius: 10px;
+  color: #21174C;
+  display: block;
+  opacity: .8;
+  padding: 10px; }
+
+.p-session__header.active {
+  border-radius: 10px 10px 0 0;
+  opacity: 1; }
+
+.p-session__meta {
+  color: #9B9B9B;
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  margin-bottom: 10px; }
+
+.p-session__title {
+  font-size: 30px;
+  margin: 0; }
+
+.p-session__body {
+  background: white;
+  border-radius: 0 0 10px 10px;
+  padding: 10px; }

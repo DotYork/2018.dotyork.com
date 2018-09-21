@@ -1,0 +1,91 @@
+//	Mixins
+//  ======
+
+
+
+//	Typography
+//		rem
+//		font-size
+//		adjust
+
+//	Media Query
+
+//	Placeholder
+
+
+
+
+
+//------------------------------------//
+//  Typography
+//------------------------------------//
+
+//	https://gist.github.com/1670945#gistcomment-78254
+
+//
+//	REM
+//
+
+@mixin rem($attribute, $value) {
+	#{$attribute}: #{$value}px;
+	#{$attribute}: #{$value / 16}rem;
+}
+
+
+
+//
+//	Font-Size
+//
+
+@mixin font_size($size) {
+	@include rem(font-size, $size);
+}
+
+
+
+//
+//	Adjust
+//
+
+@mixin text-size-adjust {
+	-webkit-text-size-adjust: 100%;
+	   -moz-text-size-adjust: 100%;
+	    -ms-text-size-adjust: 100%;
+	     -o-text-size-adjust: 100%;
+	        text-size-adjust: 100%;
+}
+
+
+
+
+
+//------------------------------------//
+//  Media Query
+//------------------------------------//
+
+// 	@stu_robson: http://alwaystwisted.com/post.php?s=2013-04-01-my-media-query-mixin
+// 	adapated by me
+//	examples at the link above
+
+@mixin mq($point, $query1: min, $query2: width) {
+    
+    @media screen and (#{$query1}-#{$query2}: $point) {
+        @content;
+    }
+}
+
+
+
+
+
+//------------------------------------//
+//  Placeholder
+//------------------------------------//
+
+@mixin placeholder {
+  &::placeholder { @content }
+  &:-ms-placeholder { @content }
+  &::-webkit-input-placeholder { @content }
+  &::-ms-input-placeholder { @content }
+}
+

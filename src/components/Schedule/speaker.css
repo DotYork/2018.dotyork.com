@@ -1,0 +1,39 @@
+.p-speakers {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.p-speaker {
+  background: #0C9D5E;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px; }
+
+.p-speaker__header a {
+  display: flex;
+  align-items: center; }
+
+.p-speaker__photo {
+  border-radius: 100%;
+  display: inline-block;
+  flex-basis: 75px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 75px;
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 75px; }
+
+.p-speaker__name {
+  color: #FAE800;
+  font-size: 16px;
+  margin: 0 0 5px 0; }
+
+.p-speaker__talk-title {
+  font-size: 14px; }
+
+.p-speaker__body {
+  border-top: solid 1px white;
+  margin-top: 20px;
+  padding-top: 20px; }

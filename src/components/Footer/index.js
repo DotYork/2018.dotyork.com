@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './footer.css';
 
 const Footer = () => (
   <footer className="p-footer">

@@ -12,6 +12,9 @@ import Session from './Session';
 import Speakers from '../../data/speakers';
 import Sessions from '../../data/sessions';
 
+// css
+import './session.css';
+
 const SessionHandler = (props) => {
 
   if (props.hasSpeakers === "true") {  

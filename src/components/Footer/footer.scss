@@ -1,0 +1,33 @@
+@import '../../assets/css/settings.scss';
+
+.p-footer {
+  background: $color-dark; 
+  bottom: 0;
+  left: 0;
+  padding: 0 0 30px 0;
+  position: fixed;
+  width: 100%;
+}
+
+.p-footer__menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.p-footer__menu li {}
+
+.p-footer__menu li a {
+  color: rgba(white ,0.5);
+  display: block;
+  font-size: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+  .p-footer__menu li a.active {
+    color: $color-yellow;
+  }

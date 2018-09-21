@@ -1,0 +1,138 @@
+//	Typography
+//  =========
+
+//	Headings
+
+//	Links
+
+//	Paragraphs
+
+//	Decoration
+//		Italic
+//		Bold
+
+//	Lists
+//		ul
+//		ol
+//		nested
+//		dl
+
+
+
+
+
+//------------------------------------//
+//	Headings
+//------------------------------------//
+
+//	H1-H6
+
+
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+
+	font-family: $heading-font-family;
+	font-weight: $font-weight-bold;
+	font-size: $font-size;
+}
+
+
+
+
+
+//------------------------------------//
+//  Links
+//------------------------------------//
+
+a {
+	color: currentColor;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+
+
+
+
+//------------------------------------//
+//  Paragraphs
+//------------------------------------//
+
+p {
+	@include font-size($font-size);
+	line-height: $line-height;
+}
+
+
+
+
+
+//------------------------------------//
+//  Decoration
+//------------------------------------//
+
+//
+//	Italic
+//
+
+i, em {
+	font-style: italic;
+}
+
+
+
+//
+//	Bold
+//
+
+strong, b {
+	font-weight: $font-weight-bold;
+}
+
+
+
+
+
+//------------------------------------//
+//  Lists
+//------------------------------------//
+
+ul, 
+ol {
+	line-height: $line-height;
+}
+
+
+
+//
+//	Ul
+//
+
+ul {
+	list-style: disc;
+}
+
+
+
+//
+//	Ol
+//
+
+ol {
+	list-style: decimal;
+}
+
+
+
+//
+//	Nested
+//
+
+ul,
+ol {
+	ol, 
+	ul {
+		margin-bottom: 0;
+	}
+}

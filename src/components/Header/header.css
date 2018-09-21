@@ -1,0 +1,20 @@
+.p-header {
+  margin: 20px 0 30px 0;
+  text-align: center; }
+
+.p-header__logo {
+  display: block;
+  width: 205px;
+  height: 40px;
+  margin: 0 auto 15px auto;
+  text-indent: -999em;
+  background: url(/assets/images/logo.svg?v=2) no-repeat;
+  background-size: 100%; }
+
+.p-header__date {
+  color: #FAE800;
+  font-size: 14px; }
+
+.p-header__logo {
+  display: block;
+  text-align: center; }

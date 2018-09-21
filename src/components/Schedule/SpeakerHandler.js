@@ -17,6 +17,7 @@ const SpeakerHandler = (props) => {
         return (
           <SpeakerDetail
             key={index}
+            speaker_twitter={speaker.twitter}
           />
         )
       })
