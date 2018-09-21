@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "DotYork 2018",
+  "name": "DotYork Conference 2018",
   "icons": [
     {
       "src": "favicon.ico",
@@ -9,7 +9,8 @@
     }
   ],
   "start_url": "./index.html",
+  "description": "The companion app to the DotYork 2018 conference",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#894fff"
 }

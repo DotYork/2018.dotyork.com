@@ -115,7 +115,7 @@ const Speakers = [
     talk: "Good Business: How Do We Make Decisions That Have An Impact?",
     session_id: "session-9",
     twitter: "BethanVincent",
-    id: "speaker-5"
+    id: "speaker-15"
   },
   {
     name: "Doug Winter",
