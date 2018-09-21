@@ -6,7 +6,7 @@ const Questions= () => {
       <h1>Questions</h1>
 
       <form name="question" method="post">
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="form-name" value="question" />
         <p>
           <label>Your Name: <input type="text" name="name"/></label>
         </p>
