@@ -30,7 +30,15 @@
 
 .p-form__btn {
   background: $color-green;
+  border: solid 1px $color-green;
   color: white;
+
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    background: white;
+    color: $color-green;
+  }
 }
 
 .p-form__error {

@@ -128,7 +128,14 @@ select, textarea, input {
   background: #21174C;
   border-radius: 10px;
   color: white;
-  padding: 10px; }
+  margin-bottom: 20px;
+  padding: 15px; }
+  .p-view__header h1 {
+    font-size: 20px;
+    margin-bottom: 20px; }
+  .p-view__header p {
+    font-size: 14px;
+    margin-bottom: 10px; }
 
 .p-view__footer {
   background: rgba(33, 23, 76, 0.4);
@@ -154,6 +161,7 @@ select, textarea, input {
   font-size: 14px;
   height: 40px;
   letter-spacing: 1px;
+  line-height: 40px;
   padding: 0 20px;
   vertical-align: middle;
   white-space: nowrap; }
@@ -183,7 +191,12 @@ select, textarea, input {
 
 .p-form__btn {
   background: #0C9D5E;
-  color: white; }
+  border: solid 1px #0C9D5E;
+  color: white;
+  transition: all 0.1s ease-in-out; }
+  .p-form__btn:hover {
+    background: white;
+    color: #0C9D5E; }
 
 .p-form__error {
   color: red;
