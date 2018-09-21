@@ -1,6 +1,6 @@
 import React from 'react';
-import SessionHandler from './Sessions';
-import Sessions from '../../../data/sessions';
+import SessionHandler from './SessionHandler';
+import Sessions from '../../data/sessions';
 
 import { 
   NavLink,

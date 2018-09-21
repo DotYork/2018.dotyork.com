@@ -1,7 +1,7 @@
 import React from 'react';
-import Speakers from '../../../data/speakers';
+import Speakers from '../../data/speakers';
 
-const SpeakerHandler = (props) => {
+const SpeakerDetail = (props) => {
 
   let speakerdetail = Speakers 
                   .filter(speaker => speaker.id === `${props.id}`)
@@ -18,4 +18,4 @@ const SpeakerHandler = (props) => {
   )
 }
 
-export default SpeakerHandler
+export default SpeakerDetail
