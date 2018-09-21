@@ -1,10 +1,19 @@
 .b-btn {
-  background: white;
+  -webkit-appearance: none;
+  appearance: none;
   border-radius: 5px;
-  color: #0C9D5E;
+  cursor: pointer;
   display: inline-block;
+  font-family: inherit;
   font-size: 14px;
   height: 40px;
-  line-height: 40px;
+  letter-spacing: 1px;
   padding: 0 20px;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &, &:hover {
+    text-decoration: none;      // [9]
+  }
+
 }

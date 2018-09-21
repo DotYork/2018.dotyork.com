@@ -17,5 +17,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "watch-css": "node-sass-chokidar src/ -o src/ --watch --recursive"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.3"
   }
 }

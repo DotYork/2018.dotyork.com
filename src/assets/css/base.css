@@ -112,6 +112,8 @@ ol ul {
 select, textarea, input {
   -webkit-appearance: none;
   appearance: none;
+  border: 0;
+  border-radius: 0;
   font-family: "stolzl", sans-serif;
   font-size: 16px;
   font-size: 1rem; }
@@ -119,11 +121,20 @@ select, textarea, input {
 .b-container {
   margin: 0 auto;
   max-width: 400px;
+  padding: 0 10px;
   position: relative; }
 
 .p-view__header {
   background: #21174C;
-  color: white; }
+  border-radius: 10px;
+  color: white;
+  padding: 10px; }
+
+.p-view__footer {
+  background: rgba(33, 23, 76, 0.4);
+  border-radius: 10px;
+  color: white;
+  padding: 10px; }
 
 .p-view-boxes {
   list-style: none;
@@ -134,11 +145,46 @@ select, textarea, input {
   margin-bottom: 20px; }
 
 .b-btn {
-  background: white;
+  -webkit-appearance: none;
+  appearance: none;
   border-radius: 5px;
-  color: #0C9D5E;
+  cursor: pointer;
   display: inline-block;
+  font-family: inherit;
   font-size: 14px;
   height: 40px;
-  line-height: 40px;
-  padding: 0 20px; }
+  letter-spacing: 1px;
+  padding: 0 20px;
+  vertical-align: middle;
+  white-space: nowrap; }
+  .b-btn, .b-btn:hover {
+    text-decoration: none; }
+
+.p-form__field:not(:last-child) {
+  margin-bottom: 20px; }
+
+.p-form__label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px; }
+
+.p-form__label-helper {
+  font-size: 12px; }
+
+.p-form__input {
+  border: solid 1px #9B9B9B;
+  height: 40px;
+  padding: 0 5px;
+  width: 100%; }
+
+.p-form__input--textarea {
+  height: 150px;
+  padding: 5px; }
+
+.p-form__btn {
+  background: #0C9D5E;
+  color: white; }
+
+.p-form__error {
+  color: red;
+  font-size: 14px; }

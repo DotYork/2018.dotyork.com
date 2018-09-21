@@ -11,6 +11,8 @@
 select, textarea, input {
 	-webkit-appearance: none;
 	appearance: none;
+	border: 0;
+	border-radius: 0;
 	
 	font-family: $font-family;
 	@include font-size($font-size);

@@ -1,0 +1,39 @@
+.p-form {
+
+}
+
+.p-form__field:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.p-form__label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.p-form__label-helper {
+  font-size: 12px;
+}
+
+.p-form__input {
+  border: solid 1px $color-neutral;
+  height: 40px;
+  padding: 0 5px;
+  width: 100%;
+}
+
+  .p-form__input--textarea {
+    height: 150px;
+    padding: 5px;
+  }
+
+.p-form__btn {
+  background: $color-green;
+  color: white;
+}
+
+.p-form__error {
+  color: red;
+  font-size: 14px;
+}
