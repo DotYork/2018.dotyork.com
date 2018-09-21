@@ -1,43 +1,41 @@
-import React from 'react';
-import Speakers from '../../data/speakers';
+//  Returns speaker from array
 
+import React from 'react';
+import PropTypes from 'prop-types';
 import { 
   NavLink,
   Route } from 'react-router-dom';
 
 // components
-import SpeakerDetail from './SpeakerDetail';
+import SpeakerHandler from './SpeakerHandler';
 
-  
-  
 const Speaker = (props) => {
-  let speakers = Speakers 
-                  .filter(speaker => speaker.session_id === `${props.session_id}`)
-                  .map((speaker) => {
-    return (
-      <li className="p-speaker">
-        <div className="p-speaker__header">
-          <NavLink to={`${props.session_path}/${speaker.name}`}>
-            <img className="p-speaker__photo" src={speaker.photo} alt={speaker.name} />
-            <div>
-              <h3 className="p-speaker__name">{speaker.name}</h3>
-              <p className="p-speaker__talk-title">{speaker.talk}</p>
-            </div>
-          </NavLink>
-        </div>
-          <Route path={`${props.session_path}/${speaker.name}`} 
-            render={() => <SpeakerDetail id={`${speaker.id}`}/> } />
-      </li>
-    )
-  }); 
-
   return (
-    <div className="p-session__body">
-      <ul className="p-speakers">
-        {speakers}
-      </ul>
-    </div>
+    <li className="p-speaker">
+      <div className="p-speaker__header">
+        <NavLink to={`${props.session_path}/${props.speaker_name}`}>
+          <img className="p-speaker__photo" src={props.speaker_photo} alt={props.speaker_name} />
+          <div>
+            <h3 className="p-speaker__name">{props.speaker_name}</h3>
+            <p className="p-speaker__talk-title">{props.speaker_talk}</p>
+          </div>
+        </NavLink>
+      </div>
+        <Route 
+          path={`${props.session_path}/${props.speaker_name}`} 
+          render={() =>  <SpeakerHandler id={`${props.speaker_id}`} /> } 
+        />
+    </li>
   )
 }
+
+Speaker.propTypes = {
+  session_id: PropTypes.string.isRequired,
+  session_path: PropTypes.string.isRequired,
+  speaker_name: PropTypes.string.isRequired,
+  speaker_photo: PropTypes.string.isRequired,
+  speaker_talk: PropTypes.string.isRequired,
+  speaker_id: PropTypes.string.isRequired
+}
   
-  export default Speaker;
+export default Speaker;

@@ -1,20 +1,17 @@
 //  Session returns the session object if the session has no speakers
 
 import React from 'react';
-import Sessions from '../../data/sessions';
+import PropTypes from 'prop-types';
 
 const Session = (props) => {
-
-  let currentSession = Sessions 
-                        .filter(session => session.id === `${props.session_id}`)
-                        .map((session) => {
-    return (
-      <p>{session.content}</p>
-    )
-  }); 
   return (
-    <div className="p-session__body">{currentSession}</div>
+    <p>{props.session_content}</p>
   )
+}
+
+Session.propTypes = {
+  session_id: PropTypes.string.isRequired,
+  session_content: PropTypes.string.isRequired
 }
 
 export default Session;
