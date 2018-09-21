@@ -26,7 +26,7 @@ const Schedule = ({match}) => {
             <span>{session.time}</span>
             <span>{session.location}</span>
           </div>
-          <h2 className="p-session__title">{session.title}</h2>
+          <h2 className="p-session__title js-altFont">{session.title}</h2>
           
         </NavLink>
 

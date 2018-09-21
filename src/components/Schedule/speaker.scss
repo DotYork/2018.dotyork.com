@@ -1,3 +1,5 @@
+@import '../../assets/css/settings.scss';
+
 .p-speakers {
   list-style: none;
   margin: 0;
@@ -5,7 +7,7 @@
 }
 
 .p-speaker {
-  background: #0C9D5E;
+  background: $color-green;
   border-radius: 10px;
   color: white;
   margin-bottom: 10px; 
@@ -18,6 +20,7 @@
   }
 
   .p-speaker__photo {
+    align-self: start;
     border-radius: 100%;
     display: inline-block;
     flex-basis: 75px;
@@ -40,7 +43,17 @@
   }
 
   .p-speaker__body {
-    border-top: solid 1px white;
     margin-top: 20px;
-    padding-top: 20px;
+  }
+
+  .p-speaker__twitter-btn {
+    display: block;
+    font-weight: $font-weight-bold;
+    text-align: center;
+
+    svg {
+      height: 16px;
+      margin-right: 5px;
+      vertical-align: -2px;
+    }
   }
