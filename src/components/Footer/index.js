@@ -1,16 +1,49 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import './footer.css';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./footer.css";
+
+import Menu from "../../assets/icons/menu.js";
+import Chat from "../../assets/icons/chat.js";
+import Feedback from "../../assets/icons/star.js";
+import Help from "../../assets/icons/help.js";
 
 const Footer = () => (
   <footer className="p-footer">
     <div className="b-container">
       <ul className="p-footer__menu">
-        <li><NavLink to="/schedule">Schedule</NavLink></li>
-        <li><NavLink to="/questions">Ask Questions</NavLink></li>
-        <li><NavLink to="/feedback">Give Feedback</NavLink></li>
-        <li><NavLink to="/help">Get Help</NavLink></li>
-      </ul>    
+        <li>
+          <NavLink to="/schedule">
+            <span>
+              <Menu fill="#ffffff" />
+            </span>
+            Schedule
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/questions">
+            <span>
+              <Chat fill="#ffffff" />
+            </span>
+            Ask Questions
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/feedback">
+            <span>
+              <Feedback fill="#ffffff" />
+            </span>
+            Give Feedback
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/help">
+            <span>
+              <Help fill="#ffffff" />
+            </span>
+            Get Help
+          </NavLink>
+        </li>
+      </ul>
     </div>
   </footer>
 );
