@@ -5,7 +5,8 @@ const Sessions = [
     start: 0,
     end: 539,
     location: "York",
-    content: "Registration opens at 9am, until then why not grab a cup of coffee at a nearby cafe?",
+    content:
+      "Registration opens at 9am, until then why not grab a cup of coffee at a <a href=''>nearby cafe</a>?",
     id: "session-1"
   },
   {
@@ -23,7 +24,8 @@ const Sessions = [
     start: 585,
     end: 599,
     location: "T.A. Hall",
-    content: "Please welcome Scott Hartop back for his fourth DotYork conference as host.",
+    content:
+      "Please welcome Scott Hartop back for his fourth DotYork conference as host.",
     id: "session-2-5"
   },
   {
@@ -41,7 +43,8 @@ const Sessions = [
     start: 690,
     end: 719,
     location: "Hospitium",
-    content: "While you enjoy your break, be sure to visit our exhibitors on the ground floor.",
+    content:
+      "While you enjoy your break, be sure to visit our exhibitors on the ground floor.",
     id: "session-4"
   },
   {
@@ -59,7 +62,8 @@ const Sessions = [
     start: 810,
     end: 879,
     location: "Hospitium",
-    content: "Lunch will be served on the first floor of the Hospitium. There’s plenty, no need to rush!",
+    content:
+      "Lunch will be served on the first floor of the Hospitium. There’s plenty, no need to rush!",
     id: "session-6"
   },
   {
@@ -77,7 +81,8 @@ const Sessions = [
     start: 960,
     end: 989,
     location: "Hospitium",
-    content: "This is your last chance to see what our exhibitors have to offer on the ground floor of the hospitium",
+    content:
+      "This is your last chance to see what our exhibitors have to offer on the ground floor of the hospitium",
     id: "session-8"
   },
   {
@@ -95,7 +100,8 @@ const Sessions = [
     start: 1080,
     end: 1109,
     location: "T.A. Hall",
-    content: "Thanks so much to everyone that came along and made today possible. We think you‘re smashing.",
+    content:
+      "Thanks so much to everyone that came along and made today possible. We think you‘re smashing.",
     id: "session-10"
   },
   {
@@ -104,7 +110,8 @@ const Sessions = [
     start: 1110,
     end: 1439,
     location: "Trembling Madness",
-    content: "Fancy a free drink? Show your completed survey page to a member of DotYork staff for a drink token",
+    content:
+      "Fancy a free drink? Show your completed survey page to a member of DotYork staff for a drink token",
     id: "session-11"
   }
 ];
