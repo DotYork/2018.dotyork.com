@@ -22,24 +22,18 @@ class Questions extends React.Component {
   handleSubmit = e => {
     this.setState({ name: this.state.name });
 
-    {
-      this.state.question
-        ? this.setState({ error_question: false })
-        : this.setState({ error_question: true });
-    }
+    if (this.state.question) {
+      this.setState({ error_question: false });
 
-    {
-      this.state.question ? (
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "question", ...this.state })
-        })
-          .then(() => this.setState({ submitted: true }))
-          .catch(error => alert(error))
-      ) : (
-        <p />
-      );
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "question", ...this.state })
+      })
+        .then(() => this.setState({ submitted: true }))
+        .catch(error => alert(error));
+    } else {
+      this.setState({ error_question: true });
     }
 
     e.preventDefault();
