@@ -24,7 +24,7 @@ const Footer = () => (
             <span>
               <Chat fill="#ffffff" />
             </span>
-            Ask Questions
+            Questions
           </NavLink>
         </li>
         <li>
@@ -32,7 +32,7 @@ const Footer = () => (
             <span>
               <Feedback fill="#ffffff" />
             </span>
-            Give Feedback
+            Feedback
           </NavLink>
         </li>
         <li>
@@ -40,7 +40,7 @@ const Footer = () => (
             <span>
               <Help fill="#ffffff" />
             </span>
-            Get Help
+            Help
           </NavLink>
         </li>
       </ul>
