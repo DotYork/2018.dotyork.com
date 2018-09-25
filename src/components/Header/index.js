@@ -5,14 +5,14 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => (
   <header className="p-header">
-    <NavLink exact to="/" className="p-header__logo">
-      DotYork
-    </NavLink>
-    <span className="p-header__date">
-      Thursday 4th October 2018.
-      <br />
-      Museum Gardens, York
-    </span>
+    <div className="p-header__inner">
+      <p className="p-header__logo">
+        <NavLink exact to="/">
+          DotYork
+        </NavLink>
+      </p>
+      <span className="p-header__date">04/10/18</span>
+    </div>
   </header>
 );
 

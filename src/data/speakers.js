@@ -57,7 +57,7 @@ const Speakers = [
   {
     name: "Isaiah Hull",
     photo: "/assets/images/speakers/isaiah-hull.jpg",
-    talk: "Untitled Identity Performance",
+    talk: "Identity",
     session_id: "session-3",
     id: "speaker-8"
   },
@@ -120,11 +120,12 @@ const Speakers = [
   {
     name: "Doug Winter",
     photo: "/assets/images/speakers/doug-winter.jpg",
-    talk: "The Secret of Time Travel and How it Leads to the End of the World, or, Why Global Financial Engineering with Cryptocurrencies Might be a Bad Idea",
+    talk:
+      "The Secret of Time Travel and How it Leads to the End of the World, or, Why Global Financial Engineering with Cryptocurrencies Might be a Bad Idea",
     session_id: "session-5",
     twitter: "IsotomaDoug",
     id: "speaker-16"
-  },
-]
+  }
+];
 
 export default Speakers;
