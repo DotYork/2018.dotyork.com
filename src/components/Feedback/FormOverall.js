@@ -154,6 +154,7 @@ class OverallForm extends React.Component {
             <textarea
               id="comments"
               className="p-form__input p-form__input--textarea"
+              name="comments"
               onChange={this.handleChange}
             />
           </p>
@@ -165,6 +166,7 @@ class OverallForm extends React.Component {
             <input
               type="email"
               id="email"
+              name="email"
               className="p-form__input"
               onChange={this.handleChange}
             />
