@@ -20,7 +20,7 @@ const FeedbackSections = [
     id: "feedback_survival"
   },
   {
-    title: "Overall",
+    title: "DotYork 2018",
     formid: "feedback_form_overall",
     id: "feedback_overall"
   }

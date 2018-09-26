@@ -15,6 +15,7 @@ const Feedback = ({ match }) => {
           className="p-feedback__header"
         >
           <h2 className="p-feedback__section-heading">{section.title}</h2>
+          <span className="b-btn p-feedback__start">Start</span>
         </NavLink>
 
         <Route

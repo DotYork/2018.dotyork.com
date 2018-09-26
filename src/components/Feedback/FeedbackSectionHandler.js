@@ -29,7 +29,7 @@ const FeedbackSectionHandler = props => {
               return (
                 <FormSurvival formid={section.formid} title={section.title} />
               );
-            case "Overall":
+            case "DotYork 2018":
               return (
                 <FormOverall formid={section.formid} title={section.title} />
               );
