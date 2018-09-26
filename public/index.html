@@ -44,5 +44,12 @@
       <input type="text" name="name" />
       <textarea name="question"></textarea>
     </form>
+
+    <form name="feedback_form_identity" netlify netlify-honeypot="bot-field" hidden>
+      <input type="radio" name="relevant" value="yes" />
+      <input type="radio" name="relevant" value="no" />
+      <input type="radio" name="interesting" value="yes" />
+      <input type="radio" name="interesting" value="no" />
+    </form>
   </body>
 </html>

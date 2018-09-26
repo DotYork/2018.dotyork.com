@@ -9,8 +9,6 @@
 
 
 select, textarea, input {
-	-webkit-appearance: none;
-	appearance: none;
 	border: 0;
 	border-radius: 0;
 	
@@ -18,5 +16,10 @@ select, textarea, input {
 	@include font-size($font-size);
 }
 
-
+input[type="text"],
+input[type="email"],
+textarea {
+	-webkit-appearance: none;
+	appearance: none;
+}
 

@@ -1,0 +1,12 @@
+.p-feedback__section {
+  background: white;
+  border-radius: 10px;
+  color: #21174C;
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px; }
+
+.p-feedback__section-heading {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: capitalize; }

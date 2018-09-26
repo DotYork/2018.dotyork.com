@@ -89,3 +89,17 @@
   &::-ms-input-placeholder { @content }
 }
 
+
+@mixin visually-hidden() {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
+}
+
+@mixin visually-unhidden() {
+	height: auto;
+	position: static !important;
+	width: auto;
+}

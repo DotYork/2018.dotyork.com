@@ -45,3 +45,25 @@
   color: red;
   font-size: 14px;
 }
+
+.p-form__label--radio {
+  border: solid 1px $color-neutral;
+  cursor: pointer;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.p-form__input--radio {
+  @include visually-hidden();
+}
+
+.p-form__input--radio:checked + .p-form__label--radio {
+  background: $color-green;
+  color: white;
+}

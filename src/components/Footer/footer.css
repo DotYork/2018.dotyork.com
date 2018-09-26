@@ -18,12 +18,14 @@
 .p-footer__menu li a {
   color: rgba(255, 255, 255, 0.5);
   display: block;
-  font-size: 8px;
+  font-size: 10px;
   padding: 10px 20px;
   text-decoration: none; }
   .p-footer__menu li a span {
     display: block;
     opacity: 0.5; }
+    .p-footer__menu li a span svg {
+      height: 25px; }
   .p-footer__menu li a.active {
     color: #FFED00; }
     .p-footer__menu li a.active span {
