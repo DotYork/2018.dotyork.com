@@ -185,6 +185,7 @@ textarea {
   font-size: 12px; }
 
 .p-form__input {
+  background: white;
   border: solid 1px #9B9B9B;
   height: 40px;
   padding: 0 5px;

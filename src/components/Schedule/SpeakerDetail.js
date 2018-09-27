@@ -3,6 +3,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Twitter from "../../assets/icons/twitter.js";
+import { NavLink } from "react-router-dom";
 
 const SpeakerDetail = props => {
   const twitterLinkText = username => {
@@ -28,6 +29,10 @@ const SpeakerDetail = props => {
         <Twitter fill="#0C9D5E" />
         {twitterLinkText(props.speaker_twitter)}
       </a>
+
+      <NavLink to={`/questions?for=${props.speaker_name}`} className="b-btn">
+        Ask a Question
+      </NavLink>
     </div>
   );
 };

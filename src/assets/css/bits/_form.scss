@@ -17,6 +17,7 @@
 }
 
 .p-form__input {
+  background: white;
   border: solid 1px $color-neutral;
   height: 40px;
   padding: 0 5px;
@@ -26,6 +27,10 @@
   .p-form__input--textarea {
     height: 150px;
     padding: 5px;
+  }
+
+  .p-form__input--select {
+    
   }
 
 .p-form__btn {

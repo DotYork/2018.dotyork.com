@@ -40,7 +40,10 @@ const SessionHandler = props => {
 
         <ul>
           <li>
-            <NavLink to={`/questions/${props.title}`} className="b-btn">
+            <NavLink
+              to={`/questions?for=${props.title} Panel`}
+              className="b-btn"
+            >
               Ask a Question
             </NavLink>
           </li>
