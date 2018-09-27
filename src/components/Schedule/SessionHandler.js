@@ -21,11 +21,10 @@ const SessionHandler = props => {
   if (props.hasSpeakers === "true") {
     return (
       <div className="p-session__body">
-        <ScrollIntoViewIfNeeded>
-          <ul className="p-speakers">
-            {Speakers.filter(
-              speaker => speaker.session_id === `${props.id}`
-            ).map((speaker, index) => {
+        <ScrollIntoViewIfNeeded />
+        <ul className="p-speakers">
+          {Speakers.filter(speaker => speaker.session_id === `${props.id}`).map(
+            (speaker, index) => {
               return (
                 <Speaker
                   key={index}
@@ -37,43 +36,42 @@ const SessionHandler = props => {
                   speaker_id={speaker.id}
                 />
               );
-            })}
-          </ul>
+            }
+          )}
+        </ul>
 
-          <ul>
-            <li>
-              <NavLink
-                to={`/questions?for=${props.title} Panel`}
-                className="b-btn"
-              >
-                Ask a Question
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to={`/feedback/${props.title}`} className="b-btn">
-                Give Feedback
-              </NavLink>
-            </li>
-          </ul>
-        </ScrollIntoViewIfNeeded>
+        <ul>
+          <li>
+            <NavLink
+              to={`/questions?for=${props.title} Panel`}
+              className="b-btn"
+            >
+              Ask a Question
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={`/feedback/${props.title}`} className="b-btn">
+              Give Feedback
+            </NavLink>
+          </li>
+        </ul>
       </div>
     );
   } else {
     return (
       <div className="p-session__body">
-        <ScrollIntoViewIfNeeded>
-          {Sessions.filter(session => session.id === `${props.id}`).map(
-            (session, index) => {
-              return (
-                <Session
-                  key={index}
-                  session_id={props.id}
-                  session_content={session.content}
-                />
-              );
-            }
-          )}
-        </ScrollIntoViewIfNeeded>
+        <ScrollIntoViewIfNeeded />
+        {Sessions.filter(session => session.id === `${props.id}`).map(
+          (session, index) => {
+            return (
+              <Session
+                key={index}
+                session_id={props.id}
+                session_content={session.content}
+              />
+            );
+          }
+        )}
       </div>
     );
   }

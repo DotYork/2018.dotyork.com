@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollIntoViewIfNeeded from "react-scroll-into-view-if-needed";
 
 import "./questions.css";
 
@@ -58,6 +59,7 @@ class Questions extends React.Component {
 
     return (
       <div className="p-questions">
+        <ScrollIntoViewIfNeeded />
         <div className="p-view__header p-questions__header">
           <h1>Ask a Question</h1>
           <p>

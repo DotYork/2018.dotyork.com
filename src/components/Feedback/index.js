@@ -1,5 +1,6 @@
 import React from "react";
 import FeedbackSectionHandler from "./FeedbackSectionHandler";
+import ScrollIntoViewIfNeeded from "react-scroll-into-view-if-needed";
 import { NavLink, Route } from "react-router-dom";
 
 import FeedbackSections from "../../data/feedbackSections";
@@ -47,6 +48,7 @@ class Feedback extends React.Component {
 
     return (
       <div>
+        <ScrollIntoViewIfNeeded />
         <div className="p-view__header">
           <h1>What Did You Think?</h1>
           <p>
