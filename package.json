@@ -9,7 +9,7 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.5"
+    "react-scripts": "2.0.0"
   },
   "scripts": {
     "dev": "npm-run-all -p watch-css start",
@@ -21,5 +21,11 @@
   },
   "devDependencies": {
     "prettier": "^1.14.3"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
