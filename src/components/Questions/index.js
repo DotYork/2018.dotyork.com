@@ -16,7 +16,8 @@ class Questions extends React.Component {
       name: localStorage.getItem(`name`),
       question: "",
       submitted: false,
-      error_question: false
+      error_question: false,
+      error_select: false
     };
   }
 
@@ -104,8 +105,11 @@ class Questions extends React.Component {
                   name="question_for"
                   value={parsed.for}
                   onChange={this.handleChange}
+                  required
                 >
-                  <option>Please Select</option>
+                  <option value="" disabled selected>
+                    Please Select
+                  </option>
                   <optgroup label="Identity" />
                   <option value="Identity Panel">Identity Panel</option>
                   <option value="Simon Collison">Simon Collison</option>
