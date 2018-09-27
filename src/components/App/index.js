@@ -10,6 +10,7 @@ import Schedule from "../../components/Schedule";
 import Questions from "../../components/Questions";
 import Feedback from "../../components/Feedback";
 import Help from "../../components/Help";
+import NotFound from "./NotFound";
 
 const App = () => (
   <BrowserRouter>
@@ -22,6 +23,7 @@ const App = () => (
         <Route path="/questions" component={Questions} />
         <Route path="/feedback" component={Feedback} />
         <Route path="/help" component={Help} />
+        <Route component={NotFound} />
       </Switch>
 
       <Footer />

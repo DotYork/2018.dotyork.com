@@ -92,7 +92,7 @@ class Questions extends React.Component {
                   className="p-form__input"
                 />
               </p>
-              <p class="p-form__field">
+              <p className="p-form__field">
                 <label className="p-form__label">
                   Who is Your Question For:
                   {this.props.speaker_name}

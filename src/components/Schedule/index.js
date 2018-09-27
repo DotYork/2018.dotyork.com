@@ -4,7 +4,7 @@ import Sessions from "../../data/sessions";
 
 import { NavLink, Route, Redirect } from "react-router-dom";
 
-const Schedule = ({ match }) => {
+const Schedule = () => {
   const nowHours = new Date().getHours();
   const nowMins = new Date().getMinutes();
   const now = nowHours * 60 + nowMins;
@@ -12,15 +12,12 @@ const Schedule = ({ match }) => {
 
   let sessions = Sessions.map(session => {
     if (now >= session.start && now <= session.end) {
-      currentSession = session.title;
+      currentSession = session.path;
     }
 
     return (
       <li className="p-view-box p-session" key={session.id}>
-        <NavLink
-          to={`${match.url}/${session.title}`}
-          className="p-session__header"
-        >
+        <NavLink to={`/schedule/${session.path}`} className="p-session__header">
           <div className="p-session__meta">
             <span>{session.time}</span>
             <span>{session.location}</span>
@@ -30,17 +27,17 @@ const Schedule = ({ match }) => {
 
         <Route
           exact
-          path={match.path}
-          render={() => <Redirect to={`${match.path}/${currentSession}`} />}
+          path="/schedule"
+          render={() => <Redirect to={`/schedule/${currentSession}`} />}
         />
 
         <Route
-          path={`${match.path}/${session.title}`}
+          path={`/schedule/${session.path}`}
           render={() => (
             <SessionHandler
               id={`${session.id}`}
               hasSpeakers={`${session.hasSpeakers}`}
-              path={`${match.path}/${session.title}`}
+              path={`/schedule/${session.path}`}
               title={session.title}
             />
           )}
