@@ -11,7 +11,7 @@ const FeedbackSectionHandler = props => {
   return (
     <div className="p-session__body">
       {FeedbackSections.filter(section => section.id === `${props.id}`).map(
-        (section, index) => {
+        section => {
           switch (section.title) {
             case "Identity":
               return (
@@ -30,6 +30,10 @@ const FeedbackSectionHandler = props => {
                 <FormSurvival formid={section.formid} title={section.title} />
               );
             case "DotYork 2018":
+              return (
+                <FormOverall formid={section.formid} title={section.title} />
+              );
+            default:
               return (
                 <FormOverall formid={section.formid} title={section.title} />
               );
