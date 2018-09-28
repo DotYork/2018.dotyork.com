@@ -1,3 +1,12 @@
+.p-feedback__bg {
+  display: block;
+  width: 80%;
+  height: auto;
+  position: fixed;
+  top: 200px;
+  right: 0;
+  z-index: 0; }
+
 .p-feedback__section {
   color: #21174C;
   display: block;

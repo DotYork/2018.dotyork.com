@@ -18,7 +18,7 @@ body {
 	@include text-size-adjust;
 	@include font-size($font-size);
 
-	background: white;
+	background: $color-dark;
 	color: $color-text;
 
 	font-family: $font-family;

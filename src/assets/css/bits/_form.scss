@@ -1,5 +1,4 @@
 .p-form {
-
 }
 
 .p-form__field:not(:last-child) {
@@ -7,6 +6,7 @@
 }
 
 .p-form__label {
+  color: $color-yellow;
   display: block;
   font-size: 14px;
   margin-bottom: 5px;
@@ -18,7 +18,7 @@
 
 .p-form__input {
   background: white;
-  border: solid 1px $color-neutral;
+  border: solid 1px white;
   height: 40px;
   padding: 0 5px;
   width: 100%;
@@ -32,6 +32,10 @@
   .p-form__input--select {
     
   }
+    .p-form__input--select-wrapper {
+      background: white;
+      display: block;
+    }
 
 .p-form__btn {
   background: $color-green;
