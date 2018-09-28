@@ -8,7 +8,12 @@ function createHTML(content) {
 }
 
 const Session = props => {
-  return <div dangerouslySetInnerHTML={createHTML(props.session_content)} />;
+  return (
+    <div
+      dangerouslySetInnerHTML={createHTML(props.session_content)}
+      className="p-content"
+    />
+  );
 };
 
 Session.propTypes = {

@@ -86,3 +86,30 @@
     @media screen and (min-width: 420px) {
       .p-session__links a {
         padding: 15px 20px 5px 20px; } }
+
+ul.p-logo-list {
+  list-style: none;
+  background: white;
+  margin: 0;
+  padding: 10px;
+  text-align: center; }
+
+ul.p-logo-list.is-large li img {
+  max-width: 150px; }
+
+ul.p-logo-list.is-medium li {
+  display: inline-block;
+  margin: 5px 10px; }
+  ul.p-logo-list.is-medium li img {
+    max-width: 120px; }
+
+ul.p-logo-list.is-small {
+  margin-bottom: 20px; }
+  ul.p-logo-list.is-small li {
+    display: inline-block;
+    margin: 5px 10px; }
+    ul.p-logo-list.is-small li img {
+      max-width: 80px; }
+
+.p-logos-supports {
+  text-align: center; }

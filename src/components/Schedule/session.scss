@@ -109,3 +109,50 @@
     }
   }
 }
+
+
+ul.p-logo-list {
+  list-style: none;
+  background: white;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+ul.p-logo-list.is-large {
+  li {
+    img {
+      max-width: 150px;
+    }
+  }
+}
+
+ul.p-logo-list.is-medium {
+  li {
+    display: inline-block;
+    margin: 5px 10px;
+
+    img {
+      max-width: 120px;
+    }
+  }
+  
+}
+
+ul.p-logo-list.is-small {
+  margin-bottom: 20px;
+
+  li {
+    display: inline-block;
+    margin: 5px 10px;
+
+    img {
+      max-width: 80px;
+    }
+  }
+  
+}
+
+.p-logos-supports {
+  text-align: center;
+}
