@@ -21,7 +21,7 @@ const Sessions = [
     path: "registration"
   },
   {
-    title: "Conference Starts",
+    title: "Welcome",
     time: "09:45 - 10:00",
     start: 585,
     end: 599,
