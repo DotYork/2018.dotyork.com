@@ -56,7 +56,7 @@ class Schedule extends React.Component {
     });
 
     return (
-      <div className="b-wrapper p-schedule">
+      <div className="p-schedule">
         <div className="b-container">
           <ul className="p-schedule-list">{sessions}</ul>
         </div>

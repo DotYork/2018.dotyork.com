@@ -1,5 +1,9 @@
 .p-schedule {
-  background: #21174C; }
+  background: #21174C;
+  padding-bottom: 100px;
+  padding-top: 60px;
+  position: relative;
+  z-index: 1; }
 
 .p-schedule__bg {
   display: block;
