@@ -1,0 +1,22 @@
+.p-content {
+  p {
+    font-size: 14px;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  ul {
+    font-size: 14px;
+    margin-left: 20px;
+
+    li {
+      margin-bottom: .5rem;
+    }
+  }
+
+  a {
+    color: $color-blue;
+  }
+}

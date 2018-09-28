@@ -18,7 +18,7 @@ const Help = () => {
 
         <div className="p-help-section">
           <h2 className="p-help-section__title">Finding Us</h2>
-          <div className="p-help-section__body">
+          <div className="p-help-section__body p-content">
             <p>
               DotYork staff will be wearing purple DotYork t-shirts and have
               staff lanyards. If you need help at any time, ask a member of
@@ -33,7 +33,7 @@ const Help = () => {
 
         <div className="p-help-section">
           <h2 className="p-help-section__title">Contact Us</h2>
-          <div className="p-help-section__body">
+          <div className="p-help-section__body p-content">
             <ul>
               <li>
                 <a href="mailto:help@dotyork.com">
@@ -52,7 +52,7 @@ const Help = () => {
 
         <div className="p-help-section">
           <h2 className="p-help-section__title">Toilets</h2>
-          <div className="p-help-section__body">
+          <div className="p-help-section__body p-content">
             <p>
               Toilets are located in The Hospitium. They have been liberated
               from the gender-binary.
@@ -62,7 +62,7 @@ const Help = () => {
 
         <div className="p-help-section">
           <h2 className="p-help-section__title">Need to get away?</h2>
-          <div className="p-help-section__body">
+          <div className="p-help-section__body p-content">
             <p>
               If you need some quiet time during sessions, there is a room to
               the left of the stage.
@@ -72,7 +72,7 @@ const Help = () => {
 
         <div className="p-help-section">
           <h2 className="p-help-section__title">Photography</h2>
-          <div className="p-help-section__body">
+          <div className="p-help-section__body p-content">
             <p>
               This event is being photographed by Hewitt & Walker for our future
               marketing. If you’d rather we didn’t use/share any photos of you,

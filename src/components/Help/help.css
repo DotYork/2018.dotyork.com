@@ -22,17 +22,3 @@
 
 .p-help-section__title {
   margin-bottom: 10px; }
-
-.p-help-section__body p {
-  font-size: 14px; }
-  .p-help-section__body p:not(:last-child) {
-    margin-bottom: 1rem; }
-
-.p-help-section__body ul {
-  font-size: 14px;
-  margin-left: 20px; }
-  .p-help-section__body ul li {
-    margin-bottom: .5rem; }
-
-.p-help-section__body a {
-  color: #3DD9FC; }
