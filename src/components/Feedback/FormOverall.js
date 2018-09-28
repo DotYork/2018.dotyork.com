@@ -64,6 +64,7 @@ class OverallForm extends React.Component {
                 id="value_yes"
                 className="p-form__input--radio"
                 onChange={this.handleChange}
+                required
               />
               <label htmlFor="value_yes" className="p-form__label--radio">
                 Yes
@@ -91,6 +92,7 @@ class OverallForm extends React.Component {
                 id="york_yes"
                 className="p-form__input--radio"
                 onChange={this.handleChange}
+                required
               />
               <label htmlFor="york_yes" className="p-form__label--radio">
                 Yes
@@ -118,6 +120,7 @@ class OverallForm extends React.Component {
                 id="tech_yes"
                 className="p-form__input--radio"
                 onChange={this.handleChange}
+                required
               />
               <label htmlFor="tech_yes" className="p-form__label--radio">
                 Yes
@@ -145,6 +148,7 @@ class OverallForm extends React.Component {
                 id="attendAgain_yes"
                 className="p-form__input--radio"
                 onChange={this.handleChange}
+                required
               />
               <label htmlFor="attendAgain_yes" className="p-form__label--radio">
                 Yes
@@ -163,7 +167,8 @@ class OverallForm extends React.Component {
             </p>
             <p className="p-form__field">
               <label htmlFor="comments" className="p-form__label">
-                Any other comments?
+                Any other comments?{" "}
+                <span class="p-form__label-helper">(optional)</span>
               </label>
               <textarea
                 id="comments"
@@ -175,7 +180,8 @@ class OverallForm extends React.Component {
             <p className="p-form__field">
               <label htmlFor="email" className="p-form__label">
                 If you’d like to be entered into a prize draw to win a £50
-                Amazon.co.uk voucher, please tell us your email address:
+                Amazon.co.uk voucher, please tell us your email address:&nbsp;
+                <span class="p-form__label-helper">(optional)</span>
               </label>
               <input
                 type="email"

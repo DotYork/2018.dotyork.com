@@ -34,25 +34,21 @@ const SessionHandler = props => {
                   speaker_photo={speaker.photo}
                   speaker_talk={speaker.talk}
                   speaker_id={speaker.id}
+                  speaker_twitter={speaker.twitter}
                 />
               );
             }
           )}
         </ul>
 
-        <ul>
+        <ul className="p-session__links">
           <li>
-            <NavLink
-              to={`/questions?for=${props.title} Panel`}
-              className="b-btn"
-            >
+            <NavLink to={`/questions?for=${props.title} Panel`}>
               Ask a Question
             </NavLink>
           </li>
           <li>
-            <NavLink to={`/feedback/${props.title}`} className="b-btn">
-              Give Feedback
-            </NavLink>
+            <NavLink to={`/feedback/${props.title}`}>Give Feedback</NavLink>
           </li>
         </ul>
       </div>

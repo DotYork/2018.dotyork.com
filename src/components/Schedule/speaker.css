@@ -1,33 +1,38 @@
 .p-speakers {
   list-style: none;
-  margin: 0;
+  margin: 20px 0 0 0;
   padding: 0; }
 
 .p-speaker {
-  background: #0C9D5E;
-  border-radius: 10px;
-  color: white;
-  margin-bottom: 10px;
-  padding: 10px; }
-
-.p-speaker__header a {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  color: white;
+  margin-bottom: 20px; }
 
 .p-speaker__photo {
   align-self: start;
   border-radius: 100%;
   display: inline-block;
-  flex-basis: 75px;
+  flex-basis: 50px;
   flex-grow: 0;
   flex-shrink: 0;
-  height: 75px;
+  height: 50px;
   margin-right: 10px;
   vertical-align: middle;
-  width: 75px; }
+  width: 50px; }
+  .p-speaker__photo img {
+    border-radius: 100%;
+    opacity: 0.7;
+    filter: saturate(0); }
+  @media screen and (min-width: 470px) {
+    .p-speaker__photo {
+      flex-basis: 75px;
+      height: 75px;
+      margin-right: 20px;
+      width: 75px; } }
 
 .p-speaker__name {
-  color: #FAE800;
+  color: white;
   font-size: 16px;
   margin: 0 0 5px 0; }
 
@@ -35,15 +40,27 @@
   font-size: 14px; }
 
 .p-speaker__body {
-  margin-top: 20px; }
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: dotted 1px rgba(255, 255, 255, 0.2); }
 
-.p-speaker__twitter-btn {
-  background: white;
-  color: #0C9D5E;
-  display: block;
-  font-weight: 500;
-  text-align: center; }
-  .p-speaker__twitter-btn svg {
-    height: 16px;
-    margin-right: 5px;
-    vertical-align: -2px; }
+.p-speaker:last-child .p-speaker__body {
+  border-bottom: 0; }
+
+.p-speaker__links {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  margin-top: 10px; }
+  .p-speaker__links a {
+    color: #3DD9FC;
+    padding: 5px 5px 5px 0;
+    text-decoration: underline; }
+  @media screen and (min-width: 420px) {
+    .p-speaker__links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; } }
+
+.p-speaker__twitter-btn svg {
+  height: 12px; }

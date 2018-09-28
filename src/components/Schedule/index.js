@@ -21,16 +21,15 @@ class Schedule extends React.Component {
       }
 
       return (
-        <li id={session.id} className="p-view-box p-session" key={session.id}>
+        <li id={session.id} className="p-session" key={session.id}>
           <NavLink
             to={`/schedule/${session.path}`}
             className="p-session__header"
           >
+            <h2 className="p-session__title js-altFont">{session.title}</h2>
             <div className="p-session__meta">
               <span>{session.time}</span>
-              <span>{session.location}</span>
             </div>
-            <h2 className="p-session__title js-altFont">{session.title}</h2>
           </NavLink>
 
           <Route
@@ -57,8 +56,11 @@ class Schedule extends React.Component {
     });
 
     return (
-      <div>
-        <ul className="p-view-boxes">{sessions}</ul>
+      <div className="p-schedule">
+        <div className="b-container">
+          <ul className="p-schedule-list">{sessions}</ul>
+        </div>
+        <span className="p-schedule__bg" />
       </div>
     );
   }

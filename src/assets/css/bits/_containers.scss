@@ -1,6 +1,10 @@
 .b-container {
   margin: 0 auto;
-  max-width: 400px;
-  padding: 0 10px;
+  max-width: 500px;
+  padding: 0 5px;
   position: relative;
+
+  @media screen and (min-width: 399px) {
+    padding: 10px;
+  }
 }

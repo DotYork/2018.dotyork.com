@@ -2,38 +2,49 @@
 
 .p-speakers {
   list-style: none;
-  margin: 0;
+  margin: 20px 0 0 0;
   padding: 0;
 }
 
 .p-speaker {
-  background: $color-green;
-  border-radius: 10px;
+   display: flex;
+    align-items: center;
   color: white;
-  margin-bottom: 10px; 
-  padding: 10px;
+  margin-bottom: 20px;
 }
 
   .p-speaker__header a {
-    display: flex;
-    align-items: center;
+   
   }
 
   .p-speaker__photo {
     align-self: start;
     border-radius: 100%;
     display: inline-block;
-    flex-basis: 75px;
+    flex-basis: 50px;
     flex-grow: 0;
     flex-shrink:0;
-    height: 75px;
+    height: 50px;
     margin-right: 10px;
     vertical-align: middle;
-    width: 75px;
+    width: 50px;
+
+    img {
+      border-radius: 100%;
+      opacity: 0.7;
+      filter: saturate(0);
+    }
+
+    @media screen and (min-width: 470px) {
+      flex-basis: 75px;
+      height: 75px;
+      margin-right: 20px;
+      width: 75px;
+    }
   }
 
   .p-speaker__name {
-    color: #FAE800;
+    color: white;
     font-size: 16px;
     margin: 0 0 5px 0;
   }
@@ -43,19 +54,38 @@
   }
 
   .p-speaker__body {
-    margin-top: 20px;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: dotted 1px rgba(white, 0.2);
+  }
+
+    .p-speaker:last-child .p-speaker__body {
+      border-bottom: 0;
+    }
+
+
+  .p-speaker__links {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    margin-top: 10px;
+
+    a {
+      color: $color-blue;
+      padding: 5px 5px 5px 0;
+      text-decoration: underline;
+    }
+
+    @media screen and (min-width: 420px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   .p-speaker__twitter-btn {
-    background: white;
-    color: $color-green;
-    display: block;
-    font-weight: $font-weight-bold;
-    text-align: center;
 
     svg {
-      height: 16px;
-      margin-right: 5px;
-      vertical-align: -2px;
+      height: 12px;
     }
   }

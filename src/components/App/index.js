@@ -14,7 +14,7 @@ import NotFound from "./NotFound";
 
 const App = () => (
   <BrowserRouter>
-    <div className="b-container">
+    <div>
       <Header />
 
       <Switch>

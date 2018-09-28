@@ -56,6 +56,7 @@ class SessionForm extends React.Component {
                 id="relevant_yes"
                 className="p-form__input--radio"
                 onChange={this.handleChange}
+                required
               />
               <label htmlFor="relevant_yes" className="p-form__label--radio">
                 Yes
@@ -83,6 +84,7 @@ class SessionForm extends React.Component {
                 id="interesting_yes"
                 className="p-form__input--radio"
                 onChange={this.handleChange}
+                required
               />
               <label htmlFor="interesting_yes" className="p-form__label--radio">
                 Yes

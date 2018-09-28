@@ -1,27 +1,73 @@
-.p-session__header {
-  background: white;
-  border-radius: 10px;
-  color: #21174C;
+.p-schedule {
+  background: #21174C;
+  padding-bottom: 100px;
+  padding-top: 60px;
+  position: relative; }
+
+.p-schedule__bg {
+  background-size: contain;
+  background-image: url(/assets/images/schedule-shape.svg?v=2);
+  background-repeat: no-repeat;
   display: block;
-  opacity: .8;
+  width: 80%;
+  height: 80%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 0; }
+
+.p-schedule-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1; }
+
+.p-session {
+  color: white;
+  margin: 20px 0;
   padding: 10px; }
 
-.p-session__header.active {
-  border-radius: 10px 10px 0 0;
-  opacity: 1; }
+.p-session__header {
+  display: block;
+  padding: 10px; }
+  @media screen and (min-width: 399px) {
+    .p-session__header {
+      padding: 20px; } }
 
-.p-session__meta {
-  color: #9B9B9B;
-  display: flex;
-  font-size: 12px;
-  justify-content: space-between;
-  margin-bottom: 10px; }
+.p-session__header.active {
+  background: rgba(255, 255, 255, 0.1); }
 
 .p-session__title {
-  font-size: 24px;
-  margin: 0; }
+  font-size: 28px;
+  margin-bottom: 10px; }
+
+.p-session__meta {
+  color: #FFED00; }
 
 .p-session__body {
-  background: white;
-  border-radius: 0 0 10px 10px;
-  padding: 0 10px 10px 10px; }
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px; }
+  @media screen and (min-width: 399px) {
+    .p-session__body {
+      padding: 10px 20px 20px 20px; } }
+
+.p-session__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border-top: solid 1px rgba(255, 255, 255, 0.2);
+  justify-content: space-between; }
+  .p-session__links a {
+    color: #3DD9FC;
+    display: block;
+    font-size: 14px;
+    padding: 15px 5px 5px 5px;
+    text-decoration: underline; }
+    @media screen and (min-width: 340px) {
+      .p-session__links a {
+        padding: 15px 10px 5px 10px; } }
+    @media screen and (min-width: 420px) {
+      .p-session__links a {
+        padding: 15px 20px 5px 20px; } }
