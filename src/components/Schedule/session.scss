@@ -37,15 +37,35 @@
 
 .p-session__header {
   display: block;
+  opacity: .7;
   padding: 10px;
+  position: relative;
 
   @media screen and (min-width: 399px) {
     padding: 20px;
+  }
+
+  &:after {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    content: "";
+    background-image: url('data:image/svg+xml;base64,PCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIzIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMjMgMzIiPgo8dGl0bGU+dW50aXRsZWQ8L3RpdGxlPgo8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMC44MzkgMTMuODcxcTAgMC4xNTkgMC4xMjggMC4zMTlsMTAuNDMgMTAuNDRxMC4xMzggMC4xMjggMC4zMyAwLjEyOHQwLjMzLTAuMTI4bDEwLjQzLTEwLjQ0cTAuMTM4LTAuMTI4IDAuMTM4LTAuMzI0dC0wLjEzOC0wLjMyNGwtMy4xNzktMy4xNzlxLTAuMTI4LTAuMTI4LTAuMzI0LTAuMTI4dC0wLjMyNCAwLjEyOGwtNi45MzIgNi45MzItNi45MzItNi45MzJxLTAuMTI4LTAuMTI4LTAuMzI0LTAuMTI4dC0wLjMyNCAwLjEyOGwtMy4xNzkgMy4xNzlxLTAuMTI4IDAuMTU5LTAuMTI4IDAuMzN6Ij48L3BhdGg+Cjwvc3ZnPgo=');
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
   }
 }
 
   .p-session__header.active {
     background: rgba(white, .1);
+    opacity: 1;
+    
+    &:after {
+      display: none;
+    }
   }
 
   .p-session__title {
