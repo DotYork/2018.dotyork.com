@@ -2,10 +2,7 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import { NavLink, Route } from "react-router-dom";
-
-// components
-import Twitter from "../../assets/icons/twitter.js";
+import { NavLink } from "react-router-dom";
 
 // css
 import "./speaker.css";

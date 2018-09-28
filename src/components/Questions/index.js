@@ -107,7 +107,7 @@ class Questions extends React.Component {
                   onChange={this.handleChange}
                   required
                 >
-                  <option value="" disabled selected>
+                  <option value="select" selected disabled>
                     Please Select
                   </option>
                   <optgroup label="Identity" />

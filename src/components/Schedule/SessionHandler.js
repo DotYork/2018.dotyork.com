@@ -27,7 +27,7 @@ const SessionHandler = props => {
             (speaker, index) => {
               return (
                 <Speaker
-                  key={index}
+                  key={speaker.id}
                   session_id={props.id}
                   session_path={props.path}
                   speaker_name={speaker.name}

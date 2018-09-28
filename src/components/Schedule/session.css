@@ -63,8 +63,7 @@
     color: #3DD9FC;
     display: block;
     font-size: 14px;
-    padding: 15px 5px 5px 5px;
-    text-decoration: underline; }
+    padding: 15px 5px 5px 5px; }
     @media screen and (min-width: 340px) {
       .p-session__links a {
         padding: 15px 10px 5px 10px; } }
