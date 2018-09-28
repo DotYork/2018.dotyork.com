@@ -8,45 +8,54 @@
   z-index: 0; }
 
 .p-feedback__section {
-  color: #21174C;
   display: block;
+  color: white;
   margin-bottom: 20px;
   position: relative; }
 
 .p-feedback__header {
   align-content: center;
-  background: white;
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
   display: flex;
   justify-content: space-between;
   padding: 10px;
   opacity: 0.8; }
   .p-feedback__header.active {
-    border-radius: 10px 10px 0 0;
     opacity: 1; }
+  @media screen and (min-width: 400px) {
+    .p-feedback__header {
+      padding: 10px 20px; } }
 
 .p-feedback__section-heading {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 24px;
+  line-height: 40px;
   text-transform: capitalize; }
 
-.p-feedback__start {
-  background: #FFED00;
-  color: #21174C;
-  height: 30px;
-  line-height: 30px; }
+.p-feedback__status {
+  color: #FFED00;
+  height: 40px;
+  font-weight: bold;
+  line-height: 40px;
+  background-image: url("data:image/svg+xml;base64,PCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIzIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMjMgMzIiPgo8dGl0bGU+dW50aXRsZWQ8L3RpdGxlPgo8cGF0aCBmaWxsPSIjZmZlZDAwIiBkPSJNNy43NyAzLjI3M3EwLjE3IDAgMC4zNDEgMC4xMzZsMTEuMTU5IDExLjE0OHEwLjEzNiAwLjE0OCAwLjEzNiAwLjM1MnQtMC4xMzYgMC4zNTJsLTExLjE1OSAxMS4xNDhxLTAuMTM2IDAuMTQ4LTAuMzQ3IDAuMTQ4dC0wLjM0Ny0wLjE0OGwtMy4zOTgtMy4zOThxLTAuMTM2LTAuMTM2LTAuMTM2LTAuMzQ3dDAuMTM2LTAuMzQ3bDcuNDMyLTcuNDA5LTcuNDMyLTcuNDA5cS0wLjEzNi0wLjEzNi0wLjEzNi0wLjM0N3QwLjEzNi0wLjM0N2wzLjM5OC0zLjM5OHEwLjE3LTAuMTM2IDAuMzUyLTAuMTM2eiI+PC9wYXRoPgo8L3N2Zz4K");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 12px;
+  padding-right: 18px; }
 
-.p-feedback__header.active .p-feedback__start {
-  display: none; }
+.p-feedback__status.is-complete {
+  color: #0C9D5E;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjQgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUxLjMgKDU3NTQ0KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT50aWNrPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9InRpY2siIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xLjAwMDAwMCwgMC4wMDAwMDApIiBmaWxsPSIjMEM5RDVFIiBmaWxsLXJ1bGU9Im5vbnplcm8iPgogICAgICAgICAgICA8cGF0aCBkPSJNMjQuMTM2LDUuMTAyIEwxMC4wNzksMTkuMTcgQzkuOTUwMzMzMzMsMTkuMjYwNjY2NyA5LjgzMywxOS4zMDYgOS43MjcsMTkuMzA2IEM5LjYyMSwxOS4zMDYgOS41MDM2NjY2NywxOS4yNjA2NjY3IDkuMzc1LDE5LjE3IEwxLjEzNiwxMC45MiBDMS4wMzczMzMzMywxMC44MjkzMzMzIDAuOTg4LDEwLjcxMzY2NjcgMC45ODgsMTAuNTczIEMwLjk4OCwxMC40MzIzMzMzIDEuMDM3MzMzMzMsMTAuMzE2NjY2NyAxLjEzNiwxMC4yMjYgTDQuNTM0LDYuODI4IEM0LjYyNDY2NjY3LDYuNzM3MzMzMzMgNC43NDAzMzMzMyw2LjY5MiA0Ljg4MSw2LjY5MiBDNS4wMjE2NjY2Nyw2LjY5MiA1LjEzNzMzMzMzLDYuNzM3MzMzMzMgNS4yMjgsNi44MjggTDkuNzI4LDExLjM1MSBMMjAuMDQ2LDEuMDEgQzIwLjEzNjY2NjcsMC45MTkzMzMzMzMgMjAuMjUyMzMzMywwLjg3NCAyMC4zOTMsMC44NzQgQzIwLjUzMzY2NjcsMC44NzQgMjAuNjQ5MzMzMywwLjkxOTMzMzMzMyAyMC43NCwxLjAxIEwyNC4xMzgsNC40MDggQzI0LjIzNjY2NjcsNC40OTg2NjY2NyAyNC4yODYsNC42MTQzMzMzMyAyNC4yODYsNC43NTUgQzI0LjI4Niw0Ljg5NTY2NjY3IDI0LjIzNjY2NjcsNS4wMTEzMzMzMyAyNC4xMzgsNS4xMDIgTDI0LjEzNiw1LjEwMiBaIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==");
+  padding-right: 20px;
+  background-size: 16px; }
 
-.p-feedback__complete {
-  background: #0C9D5E;
-  border-radius: 100%;
-  color: white;
-  height: 30px;
-  line-height: 30px;
+.p-feedback__status.is-absolute {
   position: absolute;
   right: 10px;
-  text-align: center;
-  top: 10px;
-  width: 30px; }
+  top: 10px; }
+  @media screen and (min-width: 400px) {
+    .p-feedback__status.is-absolute {
+      right: 20px; } }
+
+.p-feedback__header.active .p-feedback__status {
+  display: none; }

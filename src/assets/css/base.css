@@ -213,16 +213,15 @@ textarea {
   border: solid 1px #0C9D5E;
   color: white;
   transition: all 0.1s ease-in-out; }
-  .p-form__btn:hover {
-    background: white;
-    color: #0C9D5E; }
 
 .p-form__error {
   color: red;
   font-size: 14px; }
 
 .p-form__label--radio {
-  border: solid 1px #9B9B9B;
+  border: solid 1px white;
+  background: white;
+  color: #21174C;
   cursor: pointer;
   display: block;
   height: 40px;
@@ -239,5 +238,6 @@ textarea {
   width: 1px; }
 
 .p-form__input--radio:checked + .p-form__label--radio {
-  background: #0C9D5E;
-  color: white; }
+  background: #3DD9FC;
+  color: #21174C;
+  font-weight: bold; }

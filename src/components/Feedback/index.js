@@ -27,9 +27,9 @@ class Feedback extends React.Component {
             <h2 className="p-feedback__section-heading">{section.title}</h2>
 
             {localStorage.getItem(`${section.formid}_submitted`) ? (
-              <span className="b-btn p-feedback__complete">x</span>
+              <span className="p-feedback__status is-complete">Done</span>
             ) : (
-              <span className="b-btn p-feedback__start">Start</span>
+              <span className="p-feedback__status">Start</span>
             )}
           </NavLink>
 

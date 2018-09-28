@@ -42,12 +42,14 @@ class OverallForm extends React.Component {
       <div>
         {localStorage.getItem(`${this.props.formid}_submitted`) ||
         this.state.submitted ? (
-          <div>
-            <span className="b-btn p-feedback__complete">x</span>
-            <p>You’ve done this one, thanks.</p>
+          <div className="p-feedback__form is-complete">
+            <span className="p-feedback__status is-complete is-absolute">
+              Done
+            </span>
+            <p>Thanks!</p>
           </div>
         ) : (
-          <form onSubmit={this.handleSubmit} className="p-questions__form">
+          <form onSubmit={this.handleSubmit} className="p-feedback__form">
             <input
               type="hidden"
               name="form-name"
