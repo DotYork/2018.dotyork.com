@@ -8,3 +8,31 @@
   left: -100px;
   border-radius: 100%;
   background-color: #3C337C; }
+
+.p-help .p-section-header {
+  padding-bottom: 20px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px; }
+
+.p-help-section {
+  color: white;
+  padding-bottom: 20px;
+  border-bottom: dotted 1px rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px; }
+
+.p-help-section__title {
+  margin-bottom: 10px; }
+
+.p-help-section__body p {
+  font-size: 14px; }
+  .p-help-section__body p:not(:last-child) {
+    margin-bottom: 1rem; }
+
+.p-help-section__body ul {
+  font-size: 14px;
+  margin-left: 20px; }
+  .p-help-section__body ul li {
+    margin-bottom: .5rem; }
+
+.p-help-section__body a {
+  color: #3DD9FC; }
