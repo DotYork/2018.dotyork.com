@@ -157,7 +157,9 @@ class Questions extends React.Component {
                     className="p-form__input p-form__input--textarea"
                   />
                   {this.state.error_question ? (
-                    <span class="p-form__error">Please enter a question</span>
+                    <span className="p-form__error">
+                      Please enter a question
+                    </span>
                   ) : (
                     <span />
                   )}
