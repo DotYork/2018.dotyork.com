@@ -16,10 +16,10 @@ import Speaker from "./Speaker";
 import Speakers from "../../data/speakers";
 
 const SessionHandler = props => {
-  if (props.hasSpeakers === "true") {
-    return (
-      <div className="p-session__body">
-        <ScrollIntoViewIfNeeded>
+  return (
+    <ScrollIntoViewIfNeeded>
+      {props.hasSpeakers === "true" ? (
+        <div className="p-session__body">
           <ul className="p-speakers">
             {Speakers.filter(
               speaker => speaker.session_id === `${props.id}`
@@ -38,24 +38,20 @@ const SessionHandler = props => {
               );
             })}
           </ul>
-        </ScrollIntoViewIfNeeded>
 
-        <ul className="p-session__links">
-          <li>
-            <NavLink to={`/questions?for=${props.title} Panel`}>
-              Ask a Question
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={`/feedback/${props.title}`}>Give Feedback</NavLink>
-          </li>
-        </ul>
-      </div>
-    );
-  } else {
-    return (
-      <div className="p-session__body">
-        <ScrollIntoViewIfNeeded>
+          <ul className="p-session__links">
+            <li>
+              <NavLink to={`/questions?for=${props.title} Panel`}>
+                Ask a Question
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={`/feedback/${props.title}`}>Give Feedback</NavLink>
+            </li>
+          </ul>
+        </div>
+      ) : (
+        <div className="p-session__body">
           {Sessions.filter(session => session.id === `${props.id}`).map(
             (session, index) => {
               return (
@@ -67,10 +63,10 @@ const SessionHandler = props => {
               );
             }
           )}
-        </ScrollIntoViewIfNeeded>
-      </div>
-    );
-  }
+        </div>
+      )}
+    </ScrollIntoViewIfNeeded>
+  );
 };
 
 SessionHandler.propTypes = {
