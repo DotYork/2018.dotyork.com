@@ -1,7 +1,7 @@
+import "./questions.css";
+
 import React from "react";
 import ScrollIntoViewIfNeeded from "react-scroll-into-view-if-needed";
-
-import "./questions.css";
 
 const encode = data => {
   return Object.keys(data)
