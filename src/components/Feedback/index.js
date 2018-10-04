@@ -1,11 +1,11 @@
-import React from "react";
-import FeedbackSectionHandler from "./FeedbackSectionHandler";
-import ScrollIntoViewIfNeeded from "react-scroll-into-view-if-needed";
+import "./feedback.css";
+
 import { NavLink, Route } from "react-router-dom";
 
+import FeedbackSectionHandler from "./FeedbackSectionHandler";
 import FeedbackSections from "../../data/feedbackSections";
-
-import "./feedback.css";
+import React from "react";
+import ScrollIntoViewIfNeeded from "react-scroll-into-view-if-needed";
 
 class Feedback extends React.Component {
   constructor(props) {
