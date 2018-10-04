@@ -1,8 +1,8 @@
+import { NavLink, Redirect, Route } from "react-router-dom";
+
 import React from "react";
 import SessionHandler from "./SessionHandler";
 import Sessions from "../../data/sessions";
-
-import { NavLink, Route, Redirect } from "react-router-dom";
 
 class Schedule extends React.Component {
   constructor(props) {
@@ -14,12 +14,18 @@ class Schedule extends React.Component {
     };
   }
 
+  componentDidMount() {
+    for (let session of Sessions) {
+      if (this.state.now >= session.start && this.state.now <= session.end) {
+        this.setState({
+          currentSession: session.path
+        });
+      }
+    }
+  }
+
   render() {
     let sessions = Sessions.map(session => {
-      if (this.state.now >= session.start && this.state.now <= session.end) {
-        this.state.currentSession = session.path;
-      }
-
       return (
         <li id={session.id} className="p-session" key={session.id}>
           <NavLink
