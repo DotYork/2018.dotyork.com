@@ -60,10 +60,11 @@ class Questions extends React.Component {
 
     return (
       <div className="b-wrapper p-questions">
-        <div class="b-container">
-          <ScrollIntoViewIfNeeded />
+        <div className="b-container">
           <div className="p-section-header">
-            <h1 className="p-section-title">Ask a Question</h1>
+            <ScrollIntoViewIfNeeded>
+              <h1 className="p-section-title">Ask a Question</h1>
+            </ScrollIntoViewIfNeeded>
             <p className="p-section-intro">
               If you have questions for any of our panel, please complete the
               form below.

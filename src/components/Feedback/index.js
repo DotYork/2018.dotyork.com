@@ -49,9 +49,10 @@ class Feedback extends React.Component {
     return (
       <div className="b-wrapper p-feedback">
         <div className="b-container">
-          <ScrollIntoViewIfNeeded />
           <div className="p-section-header">
-            <h1 className="p-section-title">What Did You Think?</h1>
+            <ScrollIntoViewIfNeeded>
+              <h1 className="p-section-title">What Did You Think?</h1>
+            </ScrollIntoViewIfNeeded>
             <div className="p-section-intro">
               <p>
                 Your opinion really matters, it helps us figure out what we need
