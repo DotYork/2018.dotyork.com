@@ -8,25 +8,25 @@ const Footer = () => (
       <ul className="p-footer__menu">
         <li>
           <NavLink to="/schedule">
-            <span class="p-icon--menu" />
+            <span className="p-icon--menu" />
             Schedule
           </NavLink>
         </li>
         <li>
           <NavLink to="/questions">
-            <span class="p-icon--chat" />
+            <span className="p-icon--chat" />
             Questions
           </NavLink>
         </li>
         <li>
           <NavLink to="/feedback">
-            <span class="p-icon--feedback" />
+            <span className="p-icon--feedback" />
             Feedback
           </NavLink>
         </li>
         <li>
           <NavLink to="/help">
-            <span class="p-icon--help" />
+            <span className="p-icon--help" />
             Help
           </NavLink>
         </li>
