@@ -1,30 +1,29 @@
 //  SessionHandler tells App what to return for each session
 //    if it has a speaker, return speaker object, otherwise return session objet
 
-import React from "react";
-import PropTypes from "prop-types";
-import { NavLink } from "react-router-dom";
-import ScrollIntoViewIfNeeded from "react-scroll-into-view-if-needed";
-
-// components
-import Speaker from "./Speaker";
-import Session from "./Session";
-
-// data
-import Speakers from "../../data/speakers";
-import Sessions from "../../data/sessions";
-
 // css
 import "./session.css";
+
+import { NavLink } from "react-router-dom";
+import PropTypes from "prop-types";
+import React from "react";
+import ScrollIntoViewIfNeeded from "react-scroll-into-view-if-needed";
+import Session from "./Session";
+import Sessions from "../../data/sessions";
+// components
+import Speaker from "./Speaker";
+// data
+import Speakers from "../../data/speakers";
 
 const SessionHandler = props => {
   if (props.hasSpeakers === "true") {
     return (
       <div className="p-session__body">
-        <ScrollIntoViewIfNeeded />
-        <ul className="p-speakers">
-          {Speakers.filter(speaker => speaker.session_id === `${props.id}`).map(
-            (speaker, index) => {
+        <ScrollIntoViewIfNeeded>
+          <ul className="p-speakers">
+            {Speakers.filter(
+              speaker => speaker.session_id === `${props.id}`
+            ).map((speaker, index) => {
               return (
                 <Speaker
                   key={speaker.id}
@@ -37,9 +36,9 @@ const SessionHandler = props => {
                   speaker_twitter={speaker.twitter}
                 />
               );
-            }
-          )}
-        </ul>
+            })}
+          </ul>
+        </ScrollIntoViewIfNeeded>
 
         <ul className="p-session__links">
           <li>
@@ -56,18 +55,19 @@ const SessionHandler = props => {
   } else {
     return (
       <div className="p-session__body">
-        <ScrollIntoViewIfNeeded />
-        {Sessions.filter(session => session.id === `${props.id}`).map(
-          (session, index) => {
-            return (
-              <Session
-                key={index}
-                session_id={props.id}
-                session_content={session.content}
-              />
-            );
-          }
-        )}
+        <ScrollIntoViewIfNeeded>
+          {Sessions.filter(session => session.id === `${props.id}`).map(
+            (session, index) => {
+              return (
+                <Session
+                  key={index}
+                  session_id={props.id}
+                  session_content={session.content}
+                />
+              );
+            }
+          )}
+        </ScrollIntoViewIfNeeded>
       </div>
     );
   }
