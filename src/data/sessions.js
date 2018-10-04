@@ -203,7 +203,7 @@ const Sessions = [
     start: 1110,
     end: 1439,
     location: "Trembling Madness",
-    content: `<p>Join us for a drink and chat at <b>The House of Trembling Madness</b> on Lendal (opposite the main entrance to the Museum Gardens.</p>
+    content: `<p>Join us for a drink and chat at <b>The House of Trembling Madness</b> on Lendal (opposite the main entrance to the Museum Gardens).</p>
         <p><b class="is-yellow">Fancy a free drink?</b> Show a member of DotYork staff your completed feedback form on the app in exchange for a drink token.</p>`,
     id: "session-11",
     path: "evening"
