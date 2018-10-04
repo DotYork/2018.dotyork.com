@@ -170,7 +170,7 @@ class OverallForm extends React.Component {
             <p className="p-form__field">
               <label htmlFor="comments" className="p-form__label">
                 Any other comments?{" "}
-                <span class="p-form__label-helper">(optional)</span>
+                <span className="p-form__label-helper">(optional)</span>
               </label>
               <textarea
                 id="comments"
@@ -183,7 +183,7 @@ class OverallForm extends React.Component {
               <label htmlFor="email" className="p-form__label">
                 If you’d like to be entered into a prize draw to win a £50
                 Amazon.co.uk voucher, please tell us your email address:&nbsp;
-                <span class="p-form__label-helper">(optional)</span>
+                <span className="p-form__label-helper">(optional)</span>
               </label>
               <input
                 type="email"
