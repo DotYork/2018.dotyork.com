@@ -1,11 +1,10 @@
-import React from "react";
+import FeedbackSections from "../../data/feedbackSections";
+import FormFreedom from "./FormSession";
 import FormIdentity from "./FormSession";
 import FormMoney from "./FormSession";
-import FormFreedom from "./FormSession";
-import FormSurvival from "./FormSession";
 import FormOverall from "./FormOverall";
-
-import FeedbackSections from "../../data/feedbackSections";
+import FormSurvival from "./FormSession";
+import React from "react";
 
 const FeedbackSectionHandler = props => {
   return (
@@ -15,27 +14,51 @@ const FeedbackSectionHandler = props => {
           switch (section.title) {
             case "Identity":
               return (
-                <FormIdentity formid={section.formid} title={section.title} />
+                <FormIdentity
+                  formid={section.formid}
+                  key={section.formid}
+                  title={section.title}
+                />
               );
             case "Money":
               return (
-                <FormMoney formid={section.formid} title={section.title} />
+                <FormMoney
+                  formid={section.formid}
+                  key={section.formid}
+                  title={section.title}
+                />
               );
             case "Freedom":
               return (
-                <FormFreedom formid={section.formid} title={section.title} />
+                <FormFreedom
+                  formid={section.formid}
+                  key={section.formid}
+                  title={section.title}
+                />
               );
             case "Survival":
               return (
-                <FormSurvival formid={section.formid} title={section.title} />
+                <FormSurvival
+                  formid={section.formid}
+                  key={section.formid}
+                  title={section.title}
+                />
               );
             case "DotYork 2018":
               return (
-                <FormOverall formid={section.formid} title={section.title} />
+                <FormOverall
+                  formid={section.formid}
+                  key={section.formid}
+                  title={section.title}
+                />
               );
             default:
               return (
-                <FormOverall formid={section.formid} title={section.title} />
+                <FormOverall
+                  formid={section.formid}
+                  key={section.formid}
+                  title={section.title}
+                />
               );
           }
         }
