@@ -91,7 +91,7 @@ class Questions extends React.Component {
                   <input
                     type="text"
                     name="name"
-                    value={name}
+                    value={name || ""}
                     onChange={this.handleChange}
                     className="p-form__input"
                   />
@@ -109,7 +109,7 @@ class Questions extends React.Component {
                       onChange={this.handleChange}
                       required
                     >
-                      <option value="select" selected disabled>
+                      <option value="select" defaultValue disabled>
                         Please Select
                       </option>
                       <optgroup label="Identity" />
